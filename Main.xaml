@@ -1,0 +1,262 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="848.8,2239.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.MLServices;assembly=UiPath.MLServices" xmlns:uma="clr-namespace:UiPath.MLServices.Activities;assembly=UiPath.MLServices.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.MLServices</x:String>
+      <x:String>UiPath.MLServices.Enums</x:String>
+      <x:String>UiPath.MLServices.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="688,3439.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="trialdt" />
+      <Variable x:TypeArguments="x:Int32" Name="index" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[trialdt]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="625.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet2" WorkbookPath="reviews.xlsx" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[trialdt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="625.6,3230.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,3041.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="jsonlanguage" />
+              <Variable x:TypeArguments="njl:JObject" Name="objectlanguage" />
+              <Variable x:TypeArguments="x:String" Name="language" />
+              <Variable x:TypeArguments="x:String" Name="jsontranslate" />
+              <Variable x:TypeArguments="x:String" Name="jsontone" />
+              <Variable x:TypeArguments="njl:JObject" Name="toneobj" />
+              <Variable x:TypeArguments="x:String" Name="tone" />
+              <Variable x:TypeArguments="x:String" Name="feedback" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dtreplies" />
+              <Variable x:TypeArguments="x:String" Name="reply" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[feedback]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[CurrentRow("FEEDBACK").ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="529.6,443.2" sap2010:WorkflowViewState.IdRef="MLSkills_1" Item="[feedback]" JsonResponse="[jsonlanguage]" NextPageNum="2" RefreshList="False" TotalCount="1">
+              <uma:MLSkills.MLSkillList>
+                <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
+                  <x:Reference>__ReferenceID0</x:Reference>
+                </scg:List>
+              </uma:MLSkills.MLSkillList>
+              <uma:MLSkills.SelectedMLSkill>
+                <um:MLSkill x:Name="__ReferenceID0" AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/8481edfa-537e-40d7-bc65-84ea68663f96/ab3cd546-9353-4970-a080-7a81454893b3/cluster-b/language-detector" AccountId="8481edfa-537e-40d7-bc65-84ea68663f96" Description="" Id="12202ee3-4d7b-434d-9fdf-5fa77ed0bff5" InputDescription="Text to be analyzed.For example:&quot;Necesito ayuda con mi pedido.&quot;" InputType="JSON" Name="Language_detector" OutputDescription="JSON with prediction of the language. Output will be a prediction for the input's language along with a confidence of that prediction. {&quot;language&quot;: &quot;Spanish&quot;, &quot;confidence&quot;: 0.97}" ProjectId="cd5f7fb6-a8b6-48a2-a176-b1869e1d72d5" TenantId="ab3cd546-9353-4970-a080-7a81454893b3" />
+              </uma:MLSkills.SelectedMLSkill>
+            </uma:MLSkills>
+            <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="529.6,122.4" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[objectlanguage]" JsonString="[jsonlanguage.ToString]" />
+            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[language]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[objectlanguage("language").ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:IfElseIfV2 Condition="[language=&quot;German&quot;]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="529.6,960" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
+              <ui:IfElseIfV2.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </ui:IfElseIfV2.Else>
+              <ui:IfElseIfV2.ElseIfs>
+                <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
+              </ui:IfElseIfV2.ElseIfs>
+              <ui:IfElseIfV2.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,636.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="jsongtoe" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="433.6,443.2" sap2010:WorkflowViewState.IdRef="MLSkills_5" Item="[feedback]" JsonResponse="[jsongtoe]" NextPageNum="2" RefreshList="False" TotalCount="5">
+                    <uma:MLSkills.MLSkillList>
+                      <scg:List x:TypeArguments="um:MLSkill" Capacity="8">
+                        <um:MLSkill AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/8481edfa-537e-40d7-bc65-84ea68663f96/ab3cd546-9353-4970-a080-7a81454893b3/cluster-b/englishtogerman" AccountId="8481edfa-537e-40d7-bc65-84ea68663f96" Description="" Id="a0e2fc9f-b968-4cba-9593-d994a5931b08" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="EnglishToGerman" OutputDescription="Translated text in German Language." ProjectId="cd5f7fb6-a8b6-48a2-a176-b1869e1d72d5" TenantId="ab3cd546-9353-4970-a080-7a81454893b3" />
+                        <x:Reference>__ReferenceID1</x:Reference>
+                        <um:MLSkill AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/8481edfa-537e-40d7-bc65-84ea68663f96/ab3cd546-9353-4970-a080-7a81454893b3/cluster-b/language-detector" AccountId="8481edfa-537e-40d7-bc65-84ea68663f96" Description="" Id="12202ee3-4d7b-434d-9fdf-5fa77ed0bff5" InputDescription="Text to be analyzed.For example:&quot;Necesito ayuda con mi pedido.&quot;" InputType="JSON" Name="Language_detector" OutputDescription="JSON with prediction of the language. Output will be a prediction for the input's language along with a confidence of that prediction. {&quot;language&quot;: &quot;Spanish&quot;, &quot;confidence&quot;: 0.97}" ProjectId="cd5f7fb6-a8b6-48a2-a176-b1869e1d72d5" TenantId="ab3cd546-9353-4970-a080-7a81454893b3" />
+                        <um:MLSkill AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/8481edfa-537e-40d7-bc65-84ea68663f96/ab3cd546-9353-4970-a080-7a81454893b3/cluster-b/language-translation" AccountId="8481edfa-537e-40d7-bc65-84ea68663f96" Description="" Id="8e718ca2-10c6-4747-aefe-17aa168d4fc2" InputDescription="The model input is json string with three keys text: the text to be translated, from_lang: Language code of the text, to_lang: Language code of the targeted text. Example: {&quot;text&quot; : &quot;UN Chief says there is no military solution in Syria&quot;, &quot;from_lang&quot; : &quot;eng_Latn&quot;, &quot;to_lang&quot; : &quot;fra_Latn&quot; }&quot;" InputType="JSON" Name="Language_Translation" OutputDescription="The model will return translated text in targeted language: &quot;Le chef de l'ONU dit qu'il n'y a pas de solution militaire en Syrie&quot; " ProjectId="333105bf-08ef-443b-83a8-75595d0d67bb" TenantId="ab3cd546-9353-4970-a080-7a81454893b3" />
+                        <um:MLSkill AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/8481edfa-537e-40d7-bc65-84ea68663f96/ab3cd546-9353-4970-a080-7a81454893b3/cluster-b/sentiment-analysis" AccountId="8481edfa-537e-40d7-bc65-84ea68663f96" Description="" Id="b5e6f2e7-854b-47b1-855b-5ef9202272d4" InputDescription="Text to be analyzed.For example:&quot;I am dissatisfied with this service&quot;" InputType="JSON" Name="Sentiment_Analysis" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1). Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;. For example: {&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}" ProjectId="cd5f7fb6-a8b6-48a2-a176-b1869e1d72d5" TenantId="ab3cd546-9353-4970-a080-7a81454893b3" />
+                      </scg:List>
+                    </uma:MLSkills.MLSkillList>
+                    <uma:MLSkills.SelectedMLSkill>
+                      <um:MLSkill x:Name="__ReferenceID1" AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/8481edfa-537e-40d7-bc65-84ea68663f96/ab3cd546-9353-4970-a080-7a81454893b3/cluster-b/germantoenglish" AccountId="8481edfa-537e-40d7-bc65-84ea68663f96" Description="" Id="03b19905-9017-4df1-b99d-086512676bd1" InputDescription="Text to be translated.&#xA;&#xA;For example: &quot;Hallo, wie geht es dir?&quot;" InputType="JSON" Name="GermanToEnglish" OutputDescription="Translated text in English language" ProjectId="cd5f7fb6-a8b6-48a2-a176-b1869e1d72d5" TenantId="ab3cd546-9353-4970-a080-7a81454893b3" />
+                    </uma:MLSkills.SelectedMLSkill>
+                  </uma:MLSkills>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[feedback]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[jsongtoe]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:IfElseIfV2.Then>
+            </ui:IfElseIfV2>
+            <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="529.6,443.2" sap2010:WorkflowViewState.IdRef="MLSkills_4" Item="[feedback]" JsonResponse="[jsontone]" NextPageNum="2" RefreshList="False" TotalCount="3">
+              <uma:MLSkills.MLSkillList>
+                <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
+                  <um:MLSkill AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/8481edfa-537e-40d7-bc65-84ea68663f96/ab3cd546-9353-4970-a080-7a81454893b3/cluster-b/language-detector" AccountId="8481edfa-537e-40d7-bc65-84ea68663f96" Description="" Id="12202ee3-4d7b-434d-9fdf-5fa77ed0bff5" InputDescription="Text to be analyzed.For example:&quot;Necesito ayuda con mi pedido.&quot;" InputType="JSON" Name="Language_detector" OutputDescription="JSON with prediction of the language. Output will be a prediction for the input's language along with a confidence of that prediction. {&quot;language&quot;: &quot;Spanish&quot;, &quot;confidence&quot;: 0.97}" ProjectId="cd5f7fb6-a8b6-48a2-a176-b1869e1d72d5" TenantId="ab3cd546-9353-4970-a080-7a81454893b3" />
+                  <um:MLSkill AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/8481edfa-537e-40d7-bc65-84ea68663f96/ab3cd546-9353-4970-a080-7a81454893b3/cluster-b/language-translation" AccountId="8481edfa-537e-40d7-bc65-84ea68663f96" Description="" Id="8e718ca2-10c6-4747-aefe-17aa168d4fc2" InputDescription="The model input is json string with three keys text: the text to be translated, from_lang: Language code of the text, to_lang: Language code of the targeted text. Example: {&quot;text&quot; : &quot;UN Chief says there is no military solution in Syria&quot;, &quot;from_lang&quot; : &quot;eng_Latn&quot;, &quot;to_lang&quot; : &quot;fra_Latn&quot; }&quot;" InputType="JSON" Name="Language_Translation" OutputDescription="The model will return translated text in targeted language: &quot;Le chef de l'ONU dit qu'il n'y a pas de solution militaire en Syrie&quot; " ProjectId="333105bf-08ef-443b-83a8-75595d0d67bb" TenantId="ab3cd546-9353-4970-a080-7a81454893b3" />
+                  <x:Reference>__ReferenceID2</x:Reference>
+                </scg:List>
+              </uma:MLSkills.MLSkillList>
+              <uma:MLSkills.SelectedMLSkill>
+                <um:MLSkill x:Name="__ReferenceID2" AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/8481edfa-537e-40d7-bc65-84ea68663f96/ab3cd546-9353-4970-a080-7a81454893b3/cluster-b/sentiment-analysis" AccountId="8481edfa-537e-40d7-bc65-84ea68663f96" Description="" Id="b5e6f2e7-854b-47b1-855b-5ef9202272d4" InputDescription="Text to be analyzed.For example:&quot;I am dissatisfied with this service&quot;" InputType="JSON" Name="Sentiment_Analysis" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1). Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;. For example: {&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}" ProjectId="cd5f7fb6-a8b6-48a2-a176-b1869e1d72d5" TenantId="ab3cd546-9353-4970-a080-7a81454893b3" />
+              </uma:MLSkills.SelectedMLSkill>
+            </uma:MLSkills>
+            <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="529.6,122.4" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[toneobj]" JsonString="[jsontone.ToString]" />
+            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[tone]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[toneobj("sentiment").ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:WriteCell Cell="[&quot;D&quot;+(index+2).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="529.6,148" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet2" Text="[tone.ToString]" WorkbookPath="reviews.xlsx" />
+            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtreplies]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="529.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet3" WorkbookPath="reviews.xlsx" />
+            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[reply]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[dtreplies.Rows(1).Item(tone.ToString).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:WriteCell Cell="[&quot;E&quot;+(index+2).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="529.6,139.2" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet2" Text="[reply.ToString]" WorkbookPath="reviews.xlsx" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
