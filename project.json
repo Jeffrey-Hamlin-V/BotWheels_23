@@ -7,6 +7,7 @@
     "UiPath.Excel.Activities": "[2.23.4]",
     "UiPath.Mail.Activities": "[1.23.1]",
     "UiPath.MLServices.Activities": "[2.0.3]",
+    "UiPath.Python.Activities": "[1.6.0]",
     "UiPath.System.Activities": "[24.10.3]",
     "UiPath.Testing.Activities": "[24.10.0]",
     "UiPath.UIAutomation.Activities": "[24.10.0]",
@@ -53,6 +54,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "cd8dd6b9-dc9c-4cbe-80f3-19511782f770",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Workflow.cs",
+      "uniqueId": "adb35b77-a4dc-49fe-bd15-0e33c96e10d6",
       "input": [],
       "output": []
     }
